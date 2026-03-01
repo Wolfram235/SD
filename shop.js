@@ -204,11 +204,11 @@ function updateCartUI() {
     // Bottom bar
     const bottomBar = document.getElementById('cartBottomBar');
     if (bottomBar) {
-        bottomBar.style.display = cart.length > 0 ? 'flex' : 'none';
         document.getElementById('cartBottomCount').textContent =
             `${count} item${count !== 1 ? 's' : ''}`;
         document.getElementById('cartBottomTotal').textContent =
             `₹${cartTotal().toLocaleString('en-IN')}`;
+        bottomBar.classList.toggle('visible', cart.length > 0);
     }
 }
 
