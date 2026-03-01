@@ -24,7 +24,6 @@
 
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -826,10 +825,6 @@ h4 { font-size: 1.4rem; }
         margin-left: -20px;
     }
 
-    /* Why-choose grid: 2 columns on tablet */
-    .why-choose-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 /* ── Mobile ── */
@@ -934,10 +929,6 @@ h4 { font-size: 1.4rem; }
 
     /* Mission & Promise */
     .mv-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .why-choose-grid {
         grid-template-columns: 1fr;
     }
 
@@ -1171,7 +1162,7 @@ h4 { font-size: 1.4rem; }
 
 .why-choose-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 1.5rem;
     margin-bottom: 0.5rem;
 }
