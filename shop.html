@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Sweet Delights by Maya Fransis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="shop.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <object type="image/svg+xml" data="logo.svg" class="logo-svg"></object>
+                    <div class="logo-text">
+                        <h1>Sweet Delights</h1>
+                        <p class="logo-sub">Crafted by Maya</p>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#showcase" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="shop.html" class="nav-link active">Shop</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Shop Hero -->
+    <section class="shop-hero">
+        <div class="container">
+            <h2>Order Your Sweet Treat</h2>
+            <p>Handcrafted with love — add to cart and place your order via WhatsApp</p>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <div class="container">
+        <div class="shop-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="birthday">Birthday Cakes</button>
+            <button class="filter-btn" data-filter="wedding">Wedding Cakes</button>
+            <button class="filter-btn" data-filter="custom">Custom Print</button>
+            <button class="filter-btn" data-filter="pastry">Pastries</button>
+            <button class="filter-btn" data-filter="festival">Festival Specials</button>
+        </div>
+    </div>
+
+    <!-- Product Grid -->
+    <section class="shop-section">
+        <div class="container">
+            <div class="product-grid" id="productGrid">
+                <!-- Products injected by shop.js -->
+            </div>
+            <div class="cart-bottom-bar" id="cartBottomBar" style="display:none;">
+                <div class="cart-bottom-summary">
+                    <span id="cartBottomCount">0 items</span>
+                    <span id="cartBottomTotal">₹0</span>
+                </div>
+                <button class="cart-bottom-btn" id="cartBottomBtn">
+                    <i class="fas fa-shopping-bag"></i> View Cart &amp; Checkout
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Sweet Delights</h3>
+                    <p>Fresh from our home kitchen, made with love</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#showcase">Gallery</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sweet Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Cart Drawer -->
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <h3><i class="fas fa-shopping-bag" style="margin-right:0.5rem;"></i>Your Cart</h3>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-cookie-bite"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">
+                <i class="fab fa-whatsapp"></i> Checkout via WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkoutModal">
+        <div class="checkout-box">
+            <h3>Almost there!</h3>
+            <p>Fill in your details and we'll send your order enquiry to Maya on WhatsApp.</p>
+            <div class="form-group">
+                <label for="customerName">Your Name *</label>
+                <input type="text" id="customerName" placeholder="e.g. Priya Sharma" required>
+            </div>
+            <div class="form-group">
+                <label for="deliveryDate">Preferred Delivery / Pickup Date *</label>
+                <input type="date" id="deliveryDate" required>
+            </div>
+            <div class="form-group">
+                <label for="specialInstructions">Special Instructions</label>
+                <textarea id="specialInstructions" rows="3" placeholder="Flavour preferences, dedication text, allergies..."></textarea>
+            </div>
+            <div class="checkout-modal-btns">
+                <button class="cancel-btn" id="cancelCheckout">Cancel</button>
+                <button class="send-whatsapp-btn" id="sendWhatsappBtn">
+                    <i class="fab fa-whatsapp"></i> Send to WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext">&#8250;</button>
+        <img id="lightboxImg" src="" alt="">
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+
+</html>

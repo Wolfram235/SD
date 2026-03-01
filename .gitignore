@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Original and intermediate images (only web-compressed is used in HTML)
+Images/Cakes/
+Images/Seasonal/
+Images/web/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude
+.claude/
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Misc
+*.log

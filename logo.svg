@@ -1,0 +1,336 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"  >
+<defs>
+  <radialGradient id="bg" cx="50%" cy="44%" r="50%">
+    <stop offset="0%" stop-color="#C06070"/>
+    <stop offset="100%" stop-color="#9A4058"/>
+  </radialGradient>
+  <style>
+    @font-face {
+      font-family: "MoonTime";
+      src: url("fonts/MoonTime.577871180da84d8161e23cb65e0ce6f.fcdb844429fdf1f9b3c6249ffe70b3ab.woff2") format("woff2");
+    }
+    @font-face {
+      font-family: "Bellaboo";
+      src: url("fonts/Bellaboo.af3cb708a645c6c2a83383a39767eaa.4a4730f5ca07a302e99953a7857b86ba.woff2") format("woff2");
+    }
+    .t1 { font-family:"MoonTime"; }
+    .t2 { font-family:"Bellaboo"; }
+  </style>
+</defs>
+
+<!-- BG CIRCLE -->
+<circle cx="300" cy="300" r="278" fill="url(#bg)"/>
+
+<!-- ═══════════════════════════════════════════════════
+     1. LEFT LARGE CAKE — 1 tier, dark pink body with spots,
+        white dripping icing, toppings: strawberry, wavy candy,
+        macaron, macaron, strawberry, wavy candy + half-heart between macarons
+═══════════════════════════════════════════════════ -->
+
+<!-- cake shadow -->
+<ellipse cx="108" cy="462" rx="78" ry="9" fill="#7a2a44" opacity="0.35"/>
+
+<!-- CAKE BODY — dark pink with white spots -->
+<rect x="38" y="340" width="140" height="120" rx="8" fill="#D4708A"/>
+<!-- spots on cake body -->
+<circle cx="65"  cy="365" r="5" fill="#E890A8" opacity="0.7"/>
+<circle cx="95"  cy="380" r="4" fill="#E890A8" opacity="0.6"/>
+<circle cx="128" cy="362" r="6" fill="#E890A8" opacity="0.7"/>
+<circle cx="55"  cy="400" r="4" fill="#E890A8" opacity="0.6"/>
+<circle cx="112" cy="405" r="5" fill="#E890A8" opacity="0.7"/>
+<circle cx="148" cy="388" r="4" fill="#E890A8" opacity="0.6"/>
+<circle cx="78"  cy="420" r="5" fill="#E890A8" opacity="0.6"/>
+<circle cx="140" cy="428" r="3" fill="#E890A8" opacity="0.5"/>
+
+<!-- WHITE DRIP ICING on top -->
+<!-- flat top -->
+<rect x="38" y="332" width="140" height="14" rx="4" fill="#fff"/>
+<!-- drips -->
+<path d="M50,346 Q52,358 50,368" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M68,346 Q71,362 69,374" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M88,346 Q90,355 89,363" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M108,346 Q111,365 109,376" stroke="#fff" stroke-width="7" fill="none" stroke-linecap="round"/>
+<path d="M128,346 Q130,357 129,366" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M148,346 Q150,360 149,370" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round"/>
+<!-- cake base plate -->
+<rect x="32" y="457" width="152" height="8" rx="4" fill="#B85878"/>
+
+<!-- TOPPINGS left to right: strawberry, wavy-candy, macaron, macaron, wavy-candy, strawberry -->
+<!-- with half-heart between the two macarons -->
+
+<!-- 1. Strawberry (leftmost) -->
+<g transform="translate(52, 318)">
+  <ellipse cx="0" cy="0" rx="10" ry="13" fill="#D03050"/>
+  <path d="M-5,-10 Q0,-18 5,-10" fill="#4a8030"/>
+  <path d="M0,-13 Q2,-20 0,-22" stroke="#4a8030" stroke-width="2" fill="none"/>
+  <!-- seeds -->
+  <ellipse cx="-3" cy="-4" rx="1.5" ry="1" fill="#fff" opacity="0.7" transform="rotate(-20,-3,-4)"/>
+  <ellipse cx="3"  cy="-2" rx="1.5" ry="1" fill="#fff" opacity="0.7" transform="rotate(20,3,-2)"/>
+  <ellipse cx="0"  cy="4"  rx="1.5" ry="1" fill="#fff" opacity="0.7"/>
+</g>
+
+<!-- 2. Wavy candy (pink with waves) -->
+<g transform="translate(74, 316)">
+  <rect x="-9" y="-14" width="18" height="28" rx="5" fill="#F080A0"/>
+  <path d="M-9,-6 Q-4,-10 0,-6 Q4,-2 9,-6" stroke="#fff" stroke-width="2" fill="none"/>
+  <path d="M-9,2  Q-4,-2  0,2  Q4,6  9,2"  stroke="#fff" stroke-width="2" fill="none"/>
+  <line x1="0" y1="-14" x2="0" y2="-20" stroke="#C05070" stroke-width="2.5"/>
+</g>
+
+<!-- 3. Macaron LEFT -->
+<g transform="translate(96, 314)">
+  <!-- bottom shell -->
+  <ellipse cx="0" cy="6"  rx="13" ry="7" fill="#F4A0B8"/>
+  <!-- filling -->
+  <rect x="-13" y="2" width="26" height="5" fill="#FDE0EA"/>
+  <!-- top shell -->
+  <ellipse cx="0" cy="-1" rx="13" ry="7" fill="#F4A0B8"/>
+  <!-- top shell highlight -->
+  <ellipse cx="-3" cy="-3" rx="5" ry="3" fill="#fff" opacity="0.2"/>
+</g>
+
+<!-- HALF HEART between macarons -->
+<g transform="translate(116, 310)">
+  <!-- right half of a heart -->
+  <path d="M0,0 Q0,-10 8,-10 Q16,-10 16,0 Q16,8 0,18 Z" fill="#E84070" opacity="0.9"/>
+</g>
+
+<!-- 4. Macaron RIGHT -->
+<g transform="translate(136, 314)">
+  <ellipse cx="0" cy="6"  rx="13" ry="7" fill="#F4A0B8"/>
+  <rect x="-13" y="2" width="26" height="5" fill="#FDE0EA"/>
+  <ellipse cx="0" cy="-1" rx="13" ry="7" fill="#F4A0B8"/>
+  <ellipse cx="-3" cy="-3" rx="5" ry="3" fill="#fff" opacity="0.2"/>
+</g>
+
+<!-- 5. Wavy candy RIGHT -->
+<g transform="translate(158, 316)">
+  <rect x="-9" y="-14" width="18" height="28" rx="5" fill="#F080A0"/>
+  <path d="M-9,-6 Q-4,-10 0,-6 Q4,-2 9,-6" stroke="#fff" stroke-width="2" fill="none"/>
+  <path d="M-9,2  Q-4,-2  0,2  Q4,6  9,2"  stroke="#fff" stroke-width="2" fill="none"/>
+  <line x1="0" y1="-14" x2="0" y2="-20" stroke="#C05070" stroke-width="2.5"/>
+</g>
+
+<!-- 6. Strawberry (rightmost) -->
+<g transform="translate(178, 318)">
+  <ellipse cx="0" cy="0" rx="10" ry="13" fill="#D03050"/>
+  <path d="M-5,-10 Q0,-18 5,-10" fill="#4a8030"/>
+  <path d="M0,-13 Q2,-20 0,-22" stroke="#4a8030" stroke-width="2" fill="none"/>
+  <ellipse cx="-3" cy="-4" rx="1.5" ry="1" fill="#fff" opacity="0.7" transform="rotate(-20,-3,-4)"/>
+  <ellipse cx="3"  cy="-2" rx="1.5" ry="1" fill="#fff" opacity="0.7" transform="rotate(20,3,-2)"/>
+  <ellipse cx="0"  cy="4"  rx="1.5" ry="1" fill="#fff" opacity="0.7"/>
+</g>
+
+<!-- sparkle near cake -->
+<g transform="translate(26,360)" opacity="0.75">
+  <line x1="0" y1="-9" x2="0" y2="9" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="-9" y1="0" x2="9" y2="0" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="-4" y1="-4" x2="4" y2="4" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+  <line x1="4" y1="-4" x2="-4" y2="4" stroke="#fff" stroke-width="1" stroke-linecap="round"/>
+</g>
+
+<!-- ═══════════════════════════════════════════════════
+     2. PASTRY TRIANGLE — chocolate slice, white icing, red heart
+═══════════════════════════════════════════════════ -->
+
+<!-- shadow -->
+<ellipse cx="222" cy="462" rx="38" ry="7" fill="#7a2a44" opacity="0.3"/>
+
+<!-- Triangle cake slice body (chocolate brown) -->
+<polygon points="192,460 252,460 222,340" fill="#7B3A1C"/>
+<!-- icing layer on top left face -->
+<polygon points="192,460 222,340 218,340 188,460" fill="#F5EAD8" opacity="0.15"/>
+<!-- white icing drip on top point -->
+<path d="M215,345 Q222,332 229,345 Q226,358 222,365 Q218,358 215,345 Z" fill="#fff"/>
+<!-- chocolate texture lines -->
+<line x1="200" y1="420" x2="240" y2="380" stroke="#5A2810" stroke-width="1.5" opacity="0.4"/>
+<line x1="205" y1="440" x2="245" y2="400" stroke="#5A2810" stroke-width="1.5" opacity="0.4"/>
+<line x1="197" y1="458" x2="250" y2="430" stroke="#5A2810" stroke-width="1" opacity="0.3"/>
+<!-- Red heart on slice -->
+<g transform="translate(222,408)">
+  <path d="M0,10 Q-14,-2 -14,-10 Q-14,-20 0,-12 Q14,-20 14,-10 Q14,-2 0,10 Z" fill="#D02040"/>
+</g>
+<!-- white icing top edge -->
+<line x1="192" y1="460" x2="252" y2="460" stroke="#E8D0B8" stroke-width="3"/>
+
+<!-- ═══════════════════════════════════════════════════
+     3. CUPCAKE with strawberry & half-heart + 3 balloons
+═══════════════════════════════════════════════════ -->
+
+<!-- shadow -->
+<ellipse cx="305" cy="462" rx="36" ry="8" fill="#7a2a44" opacity="0.3"/>
+
+<!-- Cupcake wrapper — pink ribbed -->
+<path d="M278,462 L268,410 Q268,400 305,400 Q342,400 342,410 L332,462 Z" fill="#C05070"/>
+<!-- ribs -->
+<line x1="275" y1="462" x2="270" y2="403" stroke="#A03050" stroke-width="1.3" opacity="0.5"/>
+<line x1="289" y1="462" x2="285" y2="401" stroke="#A03050" stroke-width="1.3" opacity="0.5"/>
+<line x1="305" y1="462" x2="305" y2="400" stroke="#A03050" stroke-width="1.3" opacity="0.5"/>
+<line x1="321" y1="462" x2="325" y2="401" stroke="#A03050" stroke-width="1.3" opacity="0.5"/>
+<line x1="335" y1="462" x2="340" y2="403" stroke="#A03050" stroke-width="1.3" opacity="0.5"/>
+
+<!-- Frosting dome -->
+<path d="M262,405 Q262,362 305,350 Q348,362 348,405 Z" fill="#FCDDE8"/>
+<ellipse cx="305" cy="348" rx="22" ry="14" fill="#F8C8D8"/>
+<ellipse cx="305" cy="337" rx="14" ry="9"  fill="#FCDDE8"/>
+<ellipse cx="305" cy="329" rx="8" ry="6" fill="#F8C8D8"/>
+
+<!-- Strawberry on frosting -->
+<g transform="translate(295,320)">
+  <ellipse cx="0" cy="0" rx="10" ry="13" fill="#D03050"/>
+  <path d="M-5,-10 Q0,-18 5,-10" fill="#4a8030"/>
+  <path d="M0,-13 Q2,-20 0,-22" stroke="#4a8030" stroke-width="2" fill="none"/>
+  <ellipse cx="-3" cy="-4" rx="1.5" ry="1" fill="#fff" opacity="0.7" transform="rotate(-20,-3,-4)"/>
+  <ellipse cx="3"  cy="-2" rx="1.5" ry="1" fill="#fff" opacity="0.7"/>
+  <ellipse cx="0"  cy="4"  rx="1.5" ry="1" fill="#fff" opacity="0.7"/>
+</g>
+
+<!-- Pink half heart on frosting right side -->
+<g transform="translate(316,334)">
+  <path d="M0,8 Q0,-6 7,-6 Q14,-6 14,2 Q14,8 0,18 Z" fill="#F060A0" opacity="0.9"/>
+</g>
+
+<!-- BALLOONS — 2 round + 1 heart, floating above -->
+<!-- Left round balloon -->
+<ellipse cx="278" cy="280" rx="22" ry="27" fill="#F4A8C0" opacity="0.9"/>
+<ellipse cx="272" cy="270" rx="7"  ry="9"  fill="#fff" opacity="0.2"/>
+<path d="M278,307 Q282,325 295,338" stroke="#C07090" stroke-width="1.3" fill="none"/>
+
+<!-- Heart balloon (center, slightly higher) -->
+<g transform="translate(305,255)">
+  <path d="M0,22 Q-22,4 -22,-8 Q-22,-22 0,-14 Q22,-22 22,-8 Q22,4 0,22 Z" fill="#F07090" opacity="0.9"/>
+  <ellipse cx="-7" cy="-10" rx="6" ry="8" fill="#fff" opacity="0.18"/>
+  <path d="M0,22 Q2,34 5,42" stroke="#C07090" stroke-width="1.3" fill="none"/>
+</g>
+
+<!-- Right round balloon -->
+<ellipse cx="332" cy="280" rx="22" ry="27" fill="#ECA0BA" opacity="0.9"/>
+<ellipse cx="326" cy="270" rx="7"  ry="9"  fill="#fff" opacity="0.2"/>
+<path d="M332,307 Q328,325 315,338" stroke="#C07090" stroke-width="1.3" fill="none"/>
+
+<!-- sparkle right of cupcake -->
+<g transform="translate(356,350)" opacity="0.75">
+  <line x1="0" y1="-10" x2="0" y2="10" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="-10" y1="0" x2="10" y2="0" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+  <line x1="-5" y1="-5" x2="5" y2="5" stroke="#fff" stroke-width="1"/>
+  <line x1="5" y1="-5" x2="-5" y2="5" stroke="#fff" stroke-width="1"/>
+</g>
+
+<!-- ═══════════════════════════════════════════════════
+     4. CHOCOLATE SQUARES — assorted patterns
+═══════════════════════════════════════════════════ -->
+
+<!-- shadow -->
+<ellipse cx="420" cy="462" rx="42" ry="8" fill="#7a2a44" opacity="0.3"/>
+
+<!-- 2x2 grid of chocolate squares -->
+<!-- Top-left: plain dark with drizzle -->
+<rect x="390" y="390" width="38" height="38" rx="4" fill="#5A2810"/>
+<rect x="390" y="390" width="38" height="5"  rx="2" fill="#7A3820" opacity="0.6"/>
+<path d="M396,396 Q405,400 414,396 Q418,402 410,406" stroke="#C07040" stroke-width="1.5" fill="none"/>
+<path d="M396,408 Q402,404 410,408" stroke="#C07040" stroke-width="1.5" fill="none"/>
+
+<!-- Top-right: milk choc with grid lines -->
+<rect x="432" y="390" width="38" height="38" rx="4" fill="#8B4820"/>
+<rect x="432" y="390" width="38" height="5"  rx="2" fill="#A05830" opacity="0.5"/>
+<line x1="451" y1="390" x2="451" y2="428" stroke="#6A3010" stroke-width="1.2" opacity="0.5"/>
+<line x1="432" y1="409" x2="470" y2="409" stroke="#6A3010" stroke-width="1.2" opacity="0.5"/>
+<!-- dot pattern -->
+<circle cx="442" cy="400" r="2.5" fill="#C07040" opacity="0.7"/>
+<circle cx="462" cy="400" r="2.5" fill="#C07040" opacity="0.7"/>
+<circle cx="442" cy="420" r="2.5" fill="#C07040" opacity="0.7"/>
+<circle cx="462" cy="420" r="2.5" fill="#C07040" opacity="0.7"/>
+
+<!-- Bottom-left: white choc with swirl -->
+<rect x="390" y="432" width="38" height="28" rx="4" fill="#F0D890"/>
+<rect x="390" y="432" width="38" height="4"  rx="2" fill="#fff" opacity="0.5"/>
+<path d="M398,440 Q405,435 412,440 Q416,445 408,448 Q402,451 398,448 Q396,445 398,440 Z"
+      stroke="#C0A040" stroke-width="1.3" fill="none"/>
+
+<!-- Bottom-right: dark with zigzag -->
+<rect x="432" y="432" width="38" height="28" rx="4" fill="#4A2010"/>
+<rect x="432" y="432" width="38" height="4"  rx="2" fill="#6A3020" opacity="0.5"/>
+<path d="M436,442 L441,437 L447,444 L453,437 L459,444 L465,437 L469,442"
+      stroke="#E08040" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- ═══════════════════════════════════════════════════
+     5. FOUR MINI SQUARE CAKES — variety
+═══════════════════════════════════════════════════ -->
+
+<!-- shadow -->
+<ellipse cx="524" cy="462" rx="46" ry="8" fill="#7a2a44" opacity="0.3"/>
+
+<!-- 2x2 grid of mini square cakes -->
+
+<!-- Top-left: pink with cherry -->
+<rect x="492" y="370" width="52" height="44" rx="4" fill="#F4A8C0"/>
+<rect x="492" y="370" width="52" height="8"  rx="3" fill="#fff" opacity="0.85"/>
+<!-- drip -->
+<path d="M504,378 Q505,386 504,392" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+<path d="M518,378 Q520,390 518,396" stroke="#fff" stroke-width="4" stroke-linecap="round" fill="none"/>
+<!-- cherry -->
+<circle cx="518" cy="366" r="7" fill="#C02040"/>
+<path d="M518,359 Q520,352 524,349" stroke="#4a8030" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+
+<!-- Top-right: chocolate with swirl -->
+<rect x="548" y="370" width="52" height="44" rx="4" fill="#7B3A1C"/>
+<rect x="548" y="370" width="52" height="8"  rx="3" fill="#F5E8D0" opacity="0.9"/>
+<path d="M556,380 Q565,375 574,380 Q578,386 572,390 Q565,393 558,390 Q554,386 556,380 Z"
+      stroke="#C07040" stroke-width="1.3" fill="none"/>
+<!-- sprinkles -->
+<line x1="560" y1="398" x2="566" y2="402" stroke="#F080A0" stroke-width="2" stroke-linecap="round"/>
+<line x1="572" y1="396" x2="568" y2="402" stroke="#80C040" stroke-width="2" stroke-linecap="round"/>
+<line x1="580" y1="400" x2="586" y2="396" stroke="#F0C000" stroke-width="2" stroke-linecap="round"/>
+
+<!-- Bottom-left: lemon yellow -->
+<rect x="492" y="418" width="52" height="42" rx="4" fill="#F0D870"/>
+<rect x="492" y="418" width="52" height="8"  rx="3" fill="#fff" opacity="0.85"/>
+<!-- zigzag icing -->
+<path d="M496,426 L502,422 L508,426 L514,422 L520,426 L526,422 L532,426 L538,422 L540,426"
+      stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<!-- lemon slice deco -->
+<circle cx="518" cy="441" r="9" fill="#F4E040" stroke="#D0A800" stroke-width="1.2"/>
+<line x1="518" y1="432" x2="518" y2="450" stroke="#D0A800" stroke-width="1"/>
+<line x1="509" y1="441" x2="527" y2="441" stroke="#D0A800" stroke-width="1"/>
+<line x1="512" y1="435" x2="524" y2="447" stroke="#D0A800" stroke-width="0.8" opacity="0.6"/>
+<line x1="524" y1="435" x2="512" y2="447" stroke="#D0A800" stroke-width="0.8" opacity="0.6"/>
+
+<!-- Bottom-right: strawberry pink -->
+<rect x="548" y="418" width="52" height="42" rx="4" fill="#E87090"/>
+<rect x="548" y="418" width="52" height="8"  rx="3" fill="#fff" opacity="0.85"/>
+<path d="M554,426 Q558,422 562,426 Q566,422 570,426 Q574,422 578,426 Q582,422 586,426 Q590,422 594,426"
+      stroke="#fff" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<!-- strawberry deco -->
+<g transform="translate(574,442)">
+  <ellipse cx="0" cy="0" rx="9" ry="11" fill="#D03050"/>
+  <path d="M-4,-9 Q0,-15 4,-9" fill="#4a8030"/>
+  <ellipse cx="-2" cy="-3" rx="1.2" ry="0.8" fill="#fff" opacity="0.7"/>
+  <ellipse cx="2"  cy="0"  rx="1.2" ry="0.8" fill="#fff" opacity="0.7"/>
+  <ellipse cx="-1" cy="4"  rx="1.2" ry="0.8" fill="#fff" opacity="0.7"/>
+</g>
+
+<!-- ══════════════════════════════════════
+     TEXT
+══════════════════════════════════════ -->
+
+<!-- Sweet Delights -->
+<text x="300" y="195" text-anchor="middle" class="t1"
+  font-size="90" fill="#ffffff" letter-spacing="1">Sweet Delights</text>
+
+<!-- Crafted by Maya — offset right -->
+<text x="330" y="240" text-anchor="middle" class="t2"
+  font-size="30" fill="#F0D0DC" letter-spacing="2">Crafted by Maya</text>
+
+<!-- sparkle top left -->
+<g transform="translate(110,248)" opacity="0.7">
+  <line x1="0" y1="-9" x2="0" y2="9" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="-9" y1="0" x2="9" y2="0" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/>
+  <line x1="-4" y1="-4" x2="4" y2="4" stroke="#fff" stroke-width="0.9"/>
+  <line x1="4" y1="-4" x2="-4" y2="4" stroke="#fff" stroke-width="0.9"/>
+</g>
+<g transform="translate(490,270)" opacity="0.65">
+  <line x1="0" y1="-8" x2="0" y2="8" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="-8" y1="0" x2="8" y2="0" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+</g>
+
+</svg>
