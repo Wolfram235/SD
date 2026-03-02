@@ -122,8 +122,7 @@ function renderProducts(filter = 'all') {
 
     grid.innerHTML = filtered.map(product => `
         <div class="product-card" data-category="${product.category}">
-            <img src="${product.image}" alt="${product.name}" loading="lazy"
-                 onclick="openLightbox('${product.image}', '${product.name.replace(/'/g, "\\'")}')">
+            <img src="${product.image}" alt="${product.name}" loading="lazy">
             <div class="product-info">
                 <h3>${product.name}</h3>
                 <p class="product-variant">${product.variant}</p>
@@ -208,7 +207,10 @@ function updateCartUI() {
             `${count} item${count !== 1 ? 's' : ''}`;
         document.getElementById('cartBottomTotal').textContent =
             `₹${cartTotal().toLocaleString('en-IN')}`;
-        bottomBar.classList.toggle('visible', cart.length > 0);
+        const show = cart.length > 0;
+        requestAnimationFrame(() => {
+            bottomBar.classList.toggle('visible', show);
+        });
     }
 }
 
